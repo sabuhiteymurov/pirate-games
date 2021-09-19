@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ecf9ff;
+}
+nav {
+   width: 100%;
+}
+.nav ul {
+    text-align: left;
+    padding: 0px;    
+    background: #4dbeff;
+    border-radius: 6px;
+
+}
+.nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    color: #4dbeff;
+    font-size: 22px;
+    height:50px;
+    cursor: pointer;
+    text-align:center;
+    font-family: Calibri;
+    padding-top: 14px; 
+}
+i {
+    padding-right: 3px;
+    padding-left: 3px;  
+}
+.link{
+    text-decoration: none;
+    color:white;
+    margin: 5px;      
+}
+.nav ul li:hover{
+    background: #25afff;
+    color: white;
+}
+nav ul:first-child :hover{
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.li input[type=text] {
+    border: 1px solid #ccc;  
+}
+.searchbox {
+    float: right;
+    padding: 15px;       
+}
+.searchButton {
+    height: 29px;
+}
+.inputarea {
+    height: 25px; 
+}
+.logo {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.division {
+    background-color: #ecf9ff;
+	display: inline;
+	border: 1px solid #0fb7ff;
+	border-radius: 6px;
+    float: left;
+}
+aside {
+    float: right;
+}
+.categorytable {
+    width: 100%;
+    border-collapse: collapse;
+}
+.categorytable tr th {
+    font-size: 18px;
+    font-family: Calibri;
+    color: white;
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    background-color: #4dbeff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.categorytable td, .categorytable th {
+    padding: 5px;
+}
+.categorytable :last-child{
+    border-bottom: 0px;
+}
+.tablecontent{
+    height: 28px;
+    line-height: 28px;
+    border-bottom: #0fb7ff;
+}
+.tablecontent a{
+    font-size: 15px;
+    font-family: Calibri;
+    color: darkslategray;
+    text-decoration: none;
+}
+.tablecontent:hover{
+    background-color: #25afff;
+    cursor: pointer;
+}
+.categorytable tr {
+    border-bottom: 1px solid #0fb7ff;
+}
+.categorytable tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 5px;
+}
+.categorytable tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 5px;
+}
+.categorytable td div {
+    font-family: Calibri;
+    color: darkslategray;
+    font-size: 15px;
+    display: table-cell;
+}
+.appname{
+    padding-left: 5px;
+    font-weight: bold;
+    width: 60%;
+}
+.apptype {
+    text-align: center;
+    width: 13.3%;
+}
+.language {
+    text-align: center;
+    width: 13.4%;
+}
+.size {
+    text-align: right;
+    padding-right: 5px;
+    width: 13.3%;
+}
+.popularcontent{
+    height: auto;
+    line-height: auto;
+    border-bottom: #0fb7ff;
+}
+.popularcontent a{
+    font-size: 15px;
+    font-family: Calibri;
+    color: darkslategray;
+    text-decoration: none;
+}
+.popularcontent:hover{
+    background-color: #25afff;
+    cursor: pointer;
+}
+.popularcontent td a img {
+    vertical-align: middle;
+    width: 24px;
+    margin-right: 5px;
+}
+.purchases_title h2 {
+    font-size: 18px;
+    font-family: Calibri;
+    color: darkslategray;
+    text-align: center;
+    border-bottom: 1px solid #0fb7ff;
+    padding-bottom: 14px;
+}
+.purchases_image img {
+    width: 259.5px;
+    height: 384.75px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+}
