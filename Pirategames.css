@@ -1,78 +1,101 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background: #ecf9ff;
 }
+
 nav {
-   width: 100%;
-}
-.nav ul {
-    text-align: left;
-    padding: 0px;    
+    display: flex;
     background: #4dbeff;
     border-radius: 6px;
+    margin-bottom: 10px;
+}
 
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.nav ul li{
+
+.nav ul li {
     list-style-type: none;
-    display: inline-block;
     color: #4dbeff;
-    font-size: 22px;
-    height:50px;
+    font-size: 20px;
     cursor: pointer;
-    text-align:center;
     font-family: Calibri;
-    padding-top: 14px; 
 }
-i {
-    padding-right: 3px;
-    padding-left: 3px;  
-}
-.link{
+
+.nav li a {
+    text-align: center;
+    letter-spacing: 1.5px;
+    display: inline-block;
     text-decoration: none;
-    color:white;
-    margin: 5px;      
+    color: white;
+    width: 100%;
+    padding: 15px 10px;
 }
-.nav ul li:hover{
+
+form {
+    margin-right: 10px;
+}
+
+.ipadding {
+    padding-right: 3px;
+}
+
+.nav ul li:hover {
     background: #25afff;
     color: white;
 }
-nav ul:first-child :hover{
+
+.nav ul li:nth-of-type(1):hover {
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
 }
+
 .li input[type=text] {
-    border: 1px solid #ccc;  
+    border: 1px solid #ccc;
 }
-.searchbox {
-    float: right;
-    padding: 15px;       
-}
+
 .searchButton {
-    height: 29px;
+    height: 25px;
+    width: 25px;
+    margin-left: 4px;
 }
+
 .inputarea {
-    height: 25px; 
+    height: 25px;
 }
+
 .logo {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf9ff;
+    border: 1px solid #0fb7ff;
+    border-radius: 6px;
 }
+
+.logo img {
+    width: auto;
+}
+
 .division {
     background-color: #ecf9ff;
-	display: inline;
-	border: 1px solid #0fb7ff;
-	border-radius: 6px;
-    float: left;
+    border: 1px solid #0fb7ff;
+    border-radius: 6px;
 }
-aside {
-    float: right;
-}
+
 .categorytable {
     width: 100%;
     border-collapse: collapse;
 }
+
 .categorytable tr th {
     font-size: 18px;
     font-family: Calibri;
@@ -84,92 +107,355 @@ aside {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
+
 .categorytable td, .categorytable th {
     padding: 5px;
 }
-.categorytable :last-child{
+
+.categorytable th i {
+    padding-right: 5px;
+}
+
+.categorytable :last-child {
     border-bottom: 0px;
 }
-.tablecontent{
+
+.tablecontent {
     height: 28px;
     line-height: 28px;
     border-bottom: #0fb7ff;
 }
-.tablecontent a{
+
+.tablecontent a {
     font-size: 15px;
     font-family: Calibri;
     color: darkslategray;
     text-decoration: none;
 }
-.tablecontent:hover{
+
+.tablecontent:hover {
     background-color: #25afff;
     cursor: pointer;
 }
+
 .categorytable tr {
     border-bottom: 1px solid #0fb7ff;
 }
-.categorytable tbody tr:last-child td:first-child{
+
+.categorytable tbody tr:last-child td:first-child {
     border-bottom-left-radius: 5px;
 }
-.categorytable tbody tr:last-child td:last-child{
+
+.categorytable tbody tr:last-child td:last-child {
     border-bottom-right-radius: 5px;
 }
+
 .categorytable td div {
     font-family: Calibri;
     color: darkslategray;
     font-size: 15px;
     display: table-cell;
 }
-.appname{
+
+.appname {
     padding-left: 5px;
     font-weight: bold;
     width: 60%;
 }
+
 .apptype {
     text-align: center;
     width: 13.3%;
 }
+
 .language {
     text-align: center;
     width: 13.4%;
 }
+
 .size {
     text-align: right;
     padding-right: 5px;
     width: 13.3%;
 }
-.popularcontent{
+
+.popularcontent {
     height: auto;
     line-height: auto;
     border-bottom: #0fb7ff;
 }
-.popularcontent a{
+
+.popularcontent a {
     font-size: 15px;
     font-family: Calibri;
     color: darkslategray;
     text-decoration: none;
 }
-.popularcontent:hover{
+
+.popularcontent:hover {
     background-color: #25afff;
     cursor: pointer;
 }
+
 .popularcontent td a img {
     vertical-align: middle;
     width: 24px;
     margin-right: 5px;
 }
-.purchases_title h2 {
+
+.title {
+    background-color: #4dbeff;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.title span {
     font-size: 18px;
     font-family: Calibri;
-    color: darkslategray;
-    text-align: center;
-    border-bottom: 1px solid #0fb7ff;
-    padding-bottom: 14px;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    font-weight: bold;
 }
+
 .purchases_image img {
     width: 259.5px;
-    height: 384.75px;
+    height: 401px;
     object-fit: cover;
     vertical-align: middle;
     border-style: none;
+    border-radius: 5px;
+}
+
+.inside {
+    border: 1px solid #0fb7ff;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.inside img {
+    height: 147.5px;
+    transition: all .3s ease-in-out;
+}
+
+.inside img:hover {
+    transform: scale(1.1);
+}
+
+.inside a {
+    text-decoration: none;
+    color: darkslategray;
+    cursor: pointer;
+}
+
+.purchases_content_title {
+    width: 100%;
+    font-family: Calibri;
+    font-size: 12px;
+    font-weight: bold;
+    height: 35px;
+}
+
+.newgames {
+    background-color: #ecf9ff;
+    border: 1px solid #0fb7ff;
+    border-radius: 6px;
+}
+
+.title2 {
+    background-color: #4dbeff;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    /* margin-bottom: 5px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.title2 span {
+    font-size: 18px;
+    font-family: Calibri;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.newgames li {
+    list-style-type: none;
+    border-bottom: 1px solid #02b3ff;
+}
+
+.game_contents a {
+    text-decoration: none;
+    color: darkslategray;
+    font-family: Calibri;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.game_contents li:nth-of-type(4) {
+    border-bottom: 0px;
+}
+
+.image {
+    width: 200px;
+}
+
+footer{
+    text-align: center;
+    width: 1200px;
+    border: 1px solid #0fb7ff;
+    background: #4dbeff;
+    border-radius: 5px 5px 0 0;
+    margin-top: 80px;
+    color: darkslategray;
+    line-height: 1.4;
+}
+
+footer div a {
+    text-decoration: none;
+    color: darkslategray;
+    cursor: pointer;
+    font-family: Calibri;
+    padding: 5px;
+}
+.footerlink a {
+    font-weight: 800;
+}
+.ads {
+    background-color: #ecf9ff;
+    border: 1px solid #0fb7ff;
+    border-radius: 6px;
+}
+
+.ads img {
+    border-radius: 5px;
+}
+
+.ads a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* FLEXBOX */
+nav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.leftside {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex: 0 0 925px;
+    gap: 10px;
+}
+
+.categories {
+    flex: 0 0 200px;
+}
+
+.newadded {
+    flex: 0 0 715px;
+}
+
+aside {
+    flex: 0 0 265px;
+}
+
+.popularpurchases {
+    flex-basis: 925px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.title {
+    flex: 0 0 923px;
+    margin-bottom: 10px;
+}
+
+.purchases_image {
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.purchases_contents {
+    flex: 0 0 655px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/* Ads and New added online games */
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.newgames {
+    flex: 0 0 650px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.ads {
+    flex: 0 0 200px;
+    display: flex;
+}
+
+.ads a {
+    height: 450px;
+}
+
+.title2 {
+    flex: 0 0 648px;
+}
+
+.game_contents ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game_contents li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.newgamedescription {
+    flex: 0 0 390px;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.copyright {
+    flex: 0 0 1200px;
+}
+.footerlink {
+    flex: 0 0 1200px;
 }
